@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -81,52 +78,56 @@
    <section id="course">
     <h1>Os Nossos Cursos Populares</h1>
     <p>Aprenda com os cursos mais procurados e reconhecidos, criados para facilitar sua jornada profissional</p>
+  
     <div class="course-box">
-                <div class="courses ">
-                    <img src="../img/treinamento/tecnico-em-administracao.png" alt="">
-                    <div class="details">
-                        <h6>Curso de Administração</h6>
-                        <span>Duração: 3 meses</span>
-                        <button class=" card-button material-symbols-outlined">
-                            arrow_forward
-                        </button>
-                    </div>
-                    <div class="cost">
-                        39.000 Kz
-                    </div>
-                </div>
+        <div onclick="window.location.href='./posts/cursos/curso1.html'" class="courses">
+            <img src="../img/treinamento/tecnico-em-administracao.png" alt="">
+            <div class="details">
+                <h6>CEOG 01- Modelo de Curso - Introdução á Industria de Petróleo e Gás </h6>
+                <span>Duração: 3 meses</span>
+                <button class=" card-button material-symbols-outlined">
+                    arrow_forward
+                </button>
+            </div>
+        </div>    
 
-        <div class="courses ">
+        <div onclick="window.location.href='./posts/cursos/curso2.html'" class="courses">
             <img src="../img/treinamento/gestao-de-treinamentos-previnsa.jpg" alt="">
             <div class="details">
-                <h6>Curso de Gestão</h6>
+                <h6>CEOG 02- Modelo de Curso - Química de Hidrocarbonetos </h6>
                 <span>Duração: 3 meses</span>
                 <button class=" card-button material-symbols-outlined">
                     arrow_forward
                 </button>
-            </div>
-            <div class="cost">
-                39.000 Kz
             </div>
         </div>
 
-        <div class="courses ">
+        <div onclick="window.location.href='./posts/cursos/curso3.html'" class="courses">
             <img src="../img/treinamento/treinamento-planejamento-financeiro-3.jpg" alt="">
             <div class="details">
-                <h6>Curso de Finanças</h6>
+                <h6>CEOG 03 - Modelo de Curso - Cadeia de Suprimentos e Compras I </h6>
                 <span>Duração: 3 meses</span>
                 <button class=" card-button material-symbols-outlined">
                     arrow_forward
                 </button>
             </div>
-            <div class="cost">
-                39.000 Kz
+        </div>
+
+        <div onclick="window.location.href='./posts/cursos/curso4.html'" class="courses">
+            <img src="../img/treinamento/Recursos humanos e treinamento.jpg" alt="">
+            <div class="details">
+                <h6>CEOG 04 - Modelo de Curso - Cadeia de Suprimentos e Compras II</h6>
+                <span>Duração: 3 meses</span>
+                <button class=" card-button material-symbols-outlined">
+                    arrow_forward
+                </button>
             </div>
         </div>
-  
     </div>
     <br>
 </section>
+
+
 
 <!--Mission-->
 <section id="mission">
@@ -135,11 +136,14 @@
         <h1>Entenda os Treinamentos</h1>
     </div>
     <div class="from">
-        <h3>Métodos para os Treinamentos</h3>
+        <h3>Programas de Formação</h3>
         <p>
-            Utilizaremos métodos dinâmicos e práticos para garantir que todos os participantes aprendam de forma eficiente e engajada. <br>
-            Minha abordagem será interativa, promovendo a participação ativa por meio de discussões, <br>
-            exercícios práticos e estudos de caso que conectem a teoria com situações reais do dia a dia.<br>
+            Desenvolver recursos de aprendizagem on-line, como webinars, tutoriais em vídeo e guias para 
+            download, para complementar as sessões de treinamento presenciais. <br>
+            Permitir que as Empresas do Conteúdo Local assassem materiais educacionais conforme sua 
+            conveniência e revisitem tópicos conforme necessário. <br>
+            Estabelecer uma cultura de aprendizagem contínua, oferecendo formação contínua e 
+            oportunidades de desenvolvimento profissional para as Empresas do Conteúdo Local. <br>
 
         </p>
     </div>
@@ -243,5 +247,6 @@
 </footer>
 <script src="../js/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="../js/swiper.js"></script>
 </body>
 </html>
