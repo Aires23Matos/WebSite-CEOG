@@ -14,3 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }, index * 200); // Delay de 0.2s entre cada elemento
     });
   });
+
+function showNotification() {
+  alert("Essas redes sociais ainda não estão disponíveis.");
+}

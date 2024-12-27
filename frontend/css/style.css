@@ -121,7 +121,6 @@ nav .navigation a  span.active::after{
     transition: width .6s ease-in-out;
 }
 
-
 nav .navigation a:hover span::after{
     width: 100%;
 }
@@ -241,7 +240,7 @@ nav .navigation ul li a:hover{
     text-align: center;
 }   
 
-#course .course-box.swiper{
+#course .course-box{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
@@ -249,7 +248,7 @@ nav .navigation ul li a:hover{
     
 }
 
-#course .courses .swiper{
+#course .courses {
     text-align: start;
     background: #F9F9FF;
     height: 100%;
@@ -263,21 +262,20 @@ nav .navigation ul li a:hover{
 #course .courses:hover{
     border-color: rgb(0, 0, 170);
 }
-.swiper {
-    width: 700px;
-    height: 500px;
-  }
+
 #course .courses img{
-    width: 40%;
-    height: 30%;
+    width: 100%;
+    height: 60%;
     background-size: cover;
     background-position: center;
     border-radius: 3%;
 }
+
 #course .courses .details{
     padding: 15px 15px 0 15px;
     
 }
+
 #course .courses .cost{
     color: rgb(226, 3, 3);
     line-height: 70px;
@@ -287,6 +285,7 @@ nav .navigation ul li a:hover{
     right: 15px;
     bottom:80px;
 }
+
 #course .courses  .card-button{
     height: 35px;
     width: 35px;
@@ -299,48 +298,11 @@ nav .navigation ul li a:hover{
     transform: rotate(-45deg);
     transition: 0.4s ease;
 }
+
 #course .courses:hover .card-button{
 color: #fff;
 background: #5372F0;
 }
-/*teste container*/
-
-.card-list .card-item {
-    color: #a20b0b;
-    width: 400px;
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    backdrop-filter: blur(30px);
-    background: rgba(10, 8, 8, 0.2);
-    border: 1px solid rgba(51, 16, 16, 0.5);
-}
-
-.container .card-list .card-item .user-image{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 40px;
-    border: 3px solid #fff;
-    padding: 4px;
-}
-
-.card-list .card-item{
-
-    font-size: 1.25rem;
-    padding: 10px 35px;
-    color: #030728;
-    border-radius: 6px;
-    font-weight: 500;
-    cursor: pointer;
-    background: #ae0c0c;
-    border:  1px solid transparent;
-    transition: 0.2s ease;
-}
-
 
 /*mission*/
 
@@ -359,9 +321,34 @@ background: #5372F0;
 #mission .reminder{
     color: #fff;
 }
+.reminder-img{
+    margin-left: 100px;
+    color: #fff;
+}
+
+.reminder-img h1{
+    font-size: 25px;
+    color: #fff;
+}
 
 #mission .reminder h1{
+    font-size: 25px;
     color: #fff;
+}
+
+.reminder-img img{
+    height: 200px;
+    width: 200px; 
+    object-fit: cover;
+    
+}
+
+.reminder-img .imagem{
+    margin-bottom:  40px;
+    border: 3px solid #fff;
+    padding: 4px;
+    border-radius: 50%;
+  
 }
 
 #mission .from{
