@@ -373,6 +373,75 @@ background: #5372F0;
 }
 
 
+/*mission*/
+
+#mission-visao{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(24, 14, 137, 0.499), rgba(5,4,46,0.7)),url('../img/treinamento/blog.jpg');
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mission-visao .reminder-visao{
+color: #fff;
+}
+.reminder-img{
+margin-left: 100px;
+color: #fff;
+}
+
+.reminder-img h1{
+font-size: 25px;
+color: #fff;
+}
+
+#mission-visao .reminder-visao h1{
+font-size: 25px;
+color: #fff;
+}
+
+.reminder-img img{
+height: 200px;
+width: 200px; 
+object-fit: cover;
+
+}
+
+.reminder-img .imagem{
+margin-bottom:  40px;
+border: 3px solid #fff;
+padding: 4px;
+border-radius: 50%;
+
+}
+
+#mission-visao .from-visao{
+background: #fff;
+border-radius: 8px;
+width: 900px;
+
+display: flex;
+flex-direction: column;
+padding: 40px;
+box-shadow: 0 8px 32px 0 rgba(24, 14, 137, 0.355);
+}
+
+#mission-visao .from-visao p{
+margin:  15px 0;
+padding: 15px 10px;
+text-align: justify;
+outline: none;
+}
+#mission-visao .from-visao h3{
+color: rgb(35, 35, 85);
+}
+
+
 /*Profiles*/
 #experts {
     padding: 8vw 8vw 8vw 8vw;
@@ -680,13 +749,13 @@ footer .footer-col .pro-links i:hover{
     padding-bottom: 60px !important;
 }
 
-    /*Couse_inner*/
-    #course-inner{
+/*Couse_inner*/
+#course-inner{
         display: flex;
         justify-content: center;
         align-items: flex-start;
         padding: 8vw;
-     }
+}
 
      #course-inner h3{
         padding: 35px 0 25px 0;
@@ -716,11 +785,11 @@ footer .footer-col .pro-links i:hover{
         margin-bottom: 20px;
      }
 
-     #course-inner .overview .course-head{
+#course-inner .overview .course-head{
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-     }  
+}  
 
      #course-inner .overview .course-head .c-name{
        width: 70%;
@@ -915,6 +984,7 @@ footer .footer-col .pro-links i:hover{
     text-align: center;
     padding-top: 10%;
 }
+
 #servico{
     padding: 8vw 8vw 8vw 8vw;
     text-align: center;
