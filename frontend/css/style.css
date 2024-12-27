@@ -344,22 +344,41 @@ background: #5372F0;
 }
 
 .reminder-img .imagem{
-    margin-bottom:  40px;
+   
     border: 3px solid #fff;
     padding: 4px;
     border-radius: 50%;
-  
 }
 
 #mission .from{
     background: #fff;
     border-radius: 8px;
-    width: 900px;
-    
+    width: 80%;
     display: flex;
     flex-direction: column;
     padding: 40px;
     box-shadow: 0 8px 32px 0 rgba(24, 14, 137, 0.355);
+}
+
+#mission .from-dados{
+    background: #fff;
+    border-radius: 8px;
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(24, 14, 137, 0.355);
+}
+
+#mission .from-dados p{
+    margin:  15px 0;
+    padding: 15px 10px;
+    text-align: justify;
+    outline: none;
+}
+
+#mission .from-dados h3{
+   color: rgb(35, 35, 85);
 }
 
 #mission .from p{
@@ -390,6 +409,7 @@ background: #5372F0;
 #mission-visao .reminder-visao{
 color: #fff;
 }
+
 .reminder-img{
 margin-left: 100px;
 color: #fff;
@@ -423,7 +443,7 @@ border-radius: 50%;
 #mission-visao .from-visao{
 background: #fff;
 border-radius: 8px;
-width: 900px;
+width: 100%;
 
 display: flex;
 flex-direction: column;
@@ -1128,7 +1148,7 @@ footer .footer-col .pro-links i:hover{
         bottom:50px;
     }
 
-    #mission{
+    /* #mission{
        padding: 6vw 4vw 6vw 4vw;
        flex-direction: column;
     }
@@ -1136,8 +1156,54 @@ footer .footer-col .pro-links i:hover{
     #mission .from{
         flex-direction: column;
         padding: 6vw 4vw 0 4vw;
-    }
+    } */
     
+    #mission, #mission-visao {
+        flex-direction: column; /* Ajusta a direção dos itens para vertical */
+        padding: 4vw 5vw; /* Reduz o padding */
+        height: auto; 
+    }
+
+    #mission .reminder, 
+    #mission-visao .reminder-visao {
+        text-align: center; 
+        margin-bottom: 20px; 
+    }
+   
+    .reminder-img {
+        margin-left: 0;
+        margin-bottom: 20px; 
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .reminder-img img {
+        height: 150px; 
+        width: 150px; 
+
+       
+    }
+
+    .from .responsive p, 
+    .from-visao .responsive p,  .from-dados{
+        font-size: 13px; 
+        margin-bottom: 10px; 
+    }
+
+    .from, .from-visao {
+        padding: 20px; 
+    }
+
+    .from h3, .from-visao h3 {
+        font-size: 18px; 
+    }
+
+    .from p, .from-visao p {
+        font-size: 14px; 
+    }
+
     #experts{
         padding: 8vw 8vw 4vw 8vw;
         text-align: center;
@@ -1279,7 +1345,13 @@ footer .footer-col .pro-links i:hover{
         padding: 4vw;
         text-align: center;
         flex-direction: column;
+        
     }
+
+    #servico h1{
+        font-size: 30px;
+    }
+
     #servico-home h2{
         color: #fff;
         font-size: 2.2rem;
@@ -1307,7 +1379,7 @@ footer .footer-col .pro-links i:hover{
     }
     
     .servico-order{
-        
+        width: 100%;
         margin-top: 20px;
     }
     .servico-order .servico-img{
@@ -1328,7 +1400,7 @@ footer .footer-col .pro-links i:hover{
     }
     
     .servico-order .servico-text{
-        width: 30%;
+        width: 100%;
         text-align: justify;
         margin-left: 0px;
         justify-content: center;
