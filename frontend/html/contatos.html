@@ -76,23 +76,25 @@
     <div class="from">
         <h4>Vamos nos conectar</h4>
         <p>A confiança que depositamos em você reflete o nosso compromisso com a excelência</p>
+        <form id="contactForm">
+            <div class="from-row">
+                <input type="text" id="name" maxlength="30"  placeholder="Seu Nome" required>
+                <input type="email" id="email" placeholder="Email" required>            
+            </div>
     
-        <div class="from-row">
-            <input type="text" id='name' maxlength="30"  placeholder="Seu Nome" required>
-            <input type="email" id="email" placeholder="Email">            
-        </div>
-
-        <div class="from-col">
-            <input type="text" id="subject" maxlength="30" placeholder="Subject" required>
-        </div>
-
-        <div class="from-col">
-            <textarea name="" id="" cols="30" rows="8" placeholder="Como podemos ajugar?" required></textarea>
-        </div>
-        
-        <div class="from-col">
-            <button>Enviar Mensagem</button>
-        </div>
+            <div class="from-col">
+                <input type="text" id="subject" maxlength="30" placeholder="Subject" required>
+            </div>
+    
+            <div class="from-col">
+                <textarea name="" id="message" cols="30" rows="8" placeholder="Como podemos ajugar?" required></textarea>
+            </div>
+            
+            <div class="from-col">
+                <button type="submit">Enviar Mensagem</button>
+            </div>
+        </form>
+       
     </div>
    </section>
   
@@ -143,7 +145,7 @@
     
 
 </footer>
-<script src="../js/index.js"></script>
+<script src="../js/contatos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
