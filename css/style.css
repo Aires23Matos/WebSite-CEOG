@@ -273,7 +273,6 @@ nav .navigation ul li a:hover{
 
 #course .courses .details{
     padding: 15px 15px 0 15px;
-    
 }
 
 #course .courses .cost{
@@ -286,7 +285,7 @@ nav .navigation ul li a:hover{
     bottom:80px;
 }
 
-#course .courses  .card-button{
+#course .courses .details .card-button{
     height: 35px;
     width: 35px;
     color: #5372F0;
@@ -297,6 +296,8 @@ nav .navigation ul li a:hover{
     border: 2px solid #5372F0;
     transform: rotate(-45deg);
     transition: 0.4s ease;
+    align-items: flex-start;
+    
 }
 
 #course .courses:hover .card-button{
@@ -321,6 +322,7 @@ background: #5372F0;
 #mission .reminder{
     color: #fff;
 }
+
 .reminder-img{
     margin-left: 100px;
     color: #fff;
@@ -387,6 +389,7 @@ background: #5372F0;
     text-align: justify;
     outline: none;
 }
+
 #mission .from h3{
    color: rgb(35, 35, 85);
 }
@@ -457,6 +460,7 @@ padding: 15px 10px;
 text-align: justify;
 outline: none;
 }
+
 #mission-visao .from-visao h3{
 color: rgb(35, 35, 85);
 }
@@ -777,18 +781,18 @@ footer .footer-col .pro-links i:hover{
         padding: 8vw;
 }
 
-     #course-inner h3{
-        padding: 35px 0 25px 0;
-        color: #29303b;
-     }
+#course-inner h3{
+    padding: 35px 0 25px 0;
+    color: #29303b;
+}
 
-     #course-inner p {
-        color: #64626e;
-        text-align: justify;
-     }
+#course-inner p {
+    color: #64626e;
+    text-align: justify;
+}
 
-     #course-inner hr{
-        height: 1px;
+#course-inner hr{
+    height: 1px;
         background: rgba(236, 226, 229, 0.5);
         margin-top: 40px;
      }
@@ -797,13 +801,13 @@ footer .footer-col .pro-links i:hover{
          width: 70%;
      }
 
-     #course-inner .overview .course-img{
+#course-inner .overview .course-img{
         width: 100%;
         height: 60vh;
         object-fit: cover;
         border-radius: 12px;
         margin-bottom: 20px;
-     }
+}
 
 #course-inner .overview .course-head{
         display: flex;
@@ -1009,6 +1013,7 @@ footer .footer-col .pro-links i:hover{
     padding: 8vw 8vw 8vw 8vw;
     text-align: center;
 }
+
 #servico-home h2{
     color: #fff;
     font-size: 2.2rem;
@@ -1025,6 +1030,7 @@ footer .footer-col .pro-links i:hover{
     align-items: center;
     justify-content: center;
 }
+
 .servico-mul {
     flex-direction: column;
 }
@@ -1032,6 +1038,7 @@ footer .footer-col .pro-links i:hover{
 .servico-order{
     margin-top: 20px;
 }
+
 .servico-order .servico-img{
     width: 30%;
     padding-right: 60px;
@@ -1218,6 +1225,10 @@ footer .footer-col .pro-links i:hover{
         padding: 12.5px 12px;
     }
 
+    #experts .expert-box .profile  img{
+        height: 64%;
+    }
+
     #about-container {
         flex-direction: column-reverse; 
         padding: 8vw 4vw 2vw 4vw;
@@ -1244,6 +1255,7 @@ footer .footer-col .pro-links i:hover{
        align-items: center;
        flex-wrap: wrap;
     }
+
     #trust .trust-img img{
         width: 60px;
         margin: 10px 15px;
@@ -1254,9 +1266,11 @@ footer .footer-col .pro-links i:hover{
     #blog-container {
         padding: 8vw 4vw;
     }
+
     #blog-container .blogs{
        width: 100%;
     }
+
     #blog-container .cate{
         width: 100%;
      }
@@ -1265,12 +1279,16 @@ footer .footer-col .pro-links i:hover{
         width: 100%;
         margin-top:  30px;
      }
+
      #blog-container .blogpost img{
         width: 100%;
         height: 50vh;
        object-fit: cover;
      }
 
+    #course .courses .details{
+    padding: 2px 2px;
+    }
      /*Course_inner*/
      #course-inner {
         display: flex;
@@ -1340,6 +1358,7 @@ footer .footer-col .pro-links i:hover{
         padding: 10px;
     }
     
+  
     /*servico*/
     #servico{
         padding: 4vw;

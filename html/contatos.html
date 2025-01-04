@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
-    <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -76,7 +74,7 @@
     <div class="from">
         <h4>Vamos nos conectar</h4>
         <p>A confiança que depositamos em você reflete o nosso compromisso com a excelência</p>
-        <form id="contactForm">
+        <!-- <form id="contactForm">
             <div class="from-row">
                 <input type="text" id="name" maxlength="30"  placeholder="Seu Nome" required>
                 <input type="email" id="email" placeholder="Email" required>            
@@ -91,9 +89,12 @@
             </div>
             
             <div class="from-col">
-                <button type="submit">Enviar Mensagem</button>
+                <button type="submit" id="emailButton">Enviar Mensagem</button>
             </div>
-        </form>
+        </form> -->
+        <div id="imagem-contato">
+            <img src="../img/rede-de-contatos.jpg" width="70%" alt="">
+        </div>
        
     </div>
    </section>
@@ -145,6 +146,29 @@
     
 
 </footer>
+<!-- <script>
+    function SendEmail(){
+    Email.send({
+   
+    Host : "smtp.mailendo.com",
+    port: 25,
+    secure: false,
+    // SecureToken : "03843823-edfc-4cb1-b98a-c6c9342c9017",
+    Username : "aires18matos2@gmail.com",
+    Password : "rzxkfivgvyrskael",
+    To : "aires18matos2@gmail.com",
+    From :  document.getElementById('email').value,
+    Subject : document.getElementById('subject').value,
+    Body : "Name: " +document.getElementById('name').value +
+    "<br> Email: " +document.getElementById('message').value,
+    }).then(
+     message => alert(message)
+    );
+    }
+</script>  -->
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="js/sendmail.js"></script>
 <script src="../js/index.js"></script>
 <script src="../js/contatos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
