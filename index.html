@@ -7,6 +7,7 @@
     <title>Capital Energy Oil & Gas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -84,7 +85,7 @@
   
     <div class="course-box">
 
-        <div onclick="window.location.href='./posts/cursos/curso1.html'" class="courses">
+        <div onclick="window.location.href='./html/posts/cursos/curso1.html'" class="courses">
             <img src="./img/treinamento/introdução-á-industria-de-petróleo-e-gás.png" alt="">
             <div class="details">
                 <h6>CEOG 01- Modelo de Curso - Introdução á Industria de Petróleo e Gás </h6>
@@ -95,7 +96,7 @@
             </div>
         </div>    
 
-        <div onclick="window.location.href='./posts/cursos/curso2.html'" class="courses">
+        <div onclick="window.location.href= './html/posts/cursos/curso2.html' " class="courses">
             <img src="./img/treinamento/Química-de-Hidrocarbonetos.png" alt="">
             <div class="details">
                 <h6>CEOG 02- Modelo de Curso - Química de Hidrocarbonetos </h6>
@@ -106,7 +107,7 @@
             </div>
         </div>
 
-        <div onclick="window.location.href='./posts/cursos/curso3.html'" class="courses">
+        <div onclick="window.location.href='./html/posts/cursos/curso3.html'" class="courses">
             <img src="./img/treinamento/cadeia-de-suprimentos-conteudo1.jpg" alt="">
             <div class="details">
                 <h6>CEOG 03 - Modelo de Curso - Cadeia de Suprimentos e Compras I </h6>
@@ -117,7 +118,7 @@
             </div>
         </div>
 
-        <div onclick="window.location.href='./posts/cursos/curso4.html'" class="courses">
+        <div onclick="window.location.href='./html/posts/cursos/curso4.html'" class="courses">
             <img src="./img/treinamento/Cadeia-de-Suprimentos-e-Compras-II.jpg" alt="">
             <div class="details">
                 <h6>CEOG 04 - Modelo de Curso - Cadeia de Suprimentos e Compras II</h6>
@@ -274,13 +275,23 @@
         <h3>Newsletter</h3>
         <p>Subscreva para receber mais informações e novidades da CEOG</p>
         <div class="subscribe">
-            <input type="email" placeholder="Seu email">
-            <a href="#" class="black">Subscreva</a>
+            <input type="email" id="emailInput" placeholder="Seu email">
+            <a href="#" class="black" onclick="subscribeNewsletter()">Subscreva</a>
+        </div>
+        <p id="message"></p>
+
+        <div id="customAlert" class="modal">
+            <div class="modal-content">
+                <img src="./img/double-check_10828086.gif" alt=""><br>
+                <span id="alertMessage"></span>
+            </div>
         </div>
     </div>
     
 
 </footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="./js/script.js"></script>
 <script src="./js/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>

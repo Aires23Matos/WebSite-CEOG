@@ -7,6 +7,7 @@
     <title>Capital Energy Oil & Gas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/estilo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
     <link
   rel="stylesheet"
@@ -115,13 +116,23 @@
         <h3>Newsletter</h3>
         <p>Subscreva para receber mais informações e novidades da CEOG</p>
         <div class="subscribe">
-            <input type="email" placeholder="Seu email">
-            <a href="#" class="black">Subscreva</a>
+            <input type="email" id="emailInput" placeholder="Seu email">
+            <a href="#" class="black" onclick="subscribeNewsletter()">Subscreva</a>
+        </div>
+        <p id="message"></p>
+
+        <div id="customAlert" class="modal">
+            <div class="modal-content">
+                <img src="../../../img/double-check_10828086.gif" alt=""><br>
+                <span id="alertMessage"></span>
+            </div>
         </div>
     </div>
     
 
 </footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="../../../js/script.js"></script>
 <script src="../../../js/index.js"></script>
 <script src="../../../js/contatos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

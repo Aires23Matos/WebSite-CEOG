@@ -1,0 +1,56 @@
+/* Estilização do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background-color: white;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -55%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* Estilização do conteúdo do modal */
+.modal-content {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.modal-content img{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    
+} 
+/* Cores para sucesso e erro */
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+@media (max-width: 475px) {
+    .modal {
+        width: 200px;
+        padding: 20px;
+    }
+    
+    .modal-content img{
+        width: 30%;
+    } 
+}

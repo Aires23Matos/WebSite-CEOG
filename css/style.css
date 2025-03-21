@@ -957,7 +957,7 @@ footer .footer-col .pro-links i:hover{
     } 
     #contact  .from .from-col  input,
     #contact  .from .from-col textarea{
-        width: 48%;
+        width: 100%;
         font-size: 14px;
         font-weight: 400;
         border-radius: 3px;
@@ -968,6 +968,7 @@ footer .footer-col .pro-links i:hover{
         padding: 20px 30px;
         margin-bottom: 20px;
     }
+
 
     #contact  .from  button{
         font-size: .9rem;
